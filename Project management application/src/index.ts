@@ -9,7 +9,7 @@ const clasterInfo = 'cluster0.vzjy1uk';
 
 (async () => {
   try {
-    await mongoose.connect(`mongodb+srv://${UserName}:${Password}@${clasterInfo}.mongodb.net/project-management-app`);
+    await mongoose.connect(`mongodb+srv://${UserName}:${Password}@${clasterInfo}.mongodb.net/?retryWrites=true&w=majority`);
     serverService.server.listen(process.env.PORT || PORT, function () {
       console.log('Сервер ожидает подключения...');
     });
