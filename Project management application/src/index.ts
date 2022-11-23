@@ -3,8 +3,8 @@ import { PORT } from './constants';
 
 import * as serverService from './services/server.service';
 
-const UserName = 'anton';
-const Password = '123456';
+const UserName = 'admin';
+const Password = '3PNy13PYViwR8XE4';
 const clasterInfo = 'cluster0.vzjy1uk';
 
 (async () => {
